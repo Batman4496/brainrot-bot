@@ -3,7 +3,6 @@ MORAL_GENERAL = 1242011386964606989
 BOT = 937003246680158208
 
 COGS = [
-  'movies.watch',
   'help'
 ]
 
