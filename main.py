@@ -1,10 +1,10 @@
-import discord
-from discord.ext import bridge
-import os # default module
 from dotenv import load_dotenv
-import constants
-
 load_dotenv() # load all the variables from the env file
+
+import discord
+from discord.ext import commands
+import os # default module
+import constants
 
 intents = discord.Intents.default()
 intents.message_content = True
