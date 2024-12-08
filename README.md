@@ -1,6 +1,8 @@
 # Brainrot Bot
 
 I L rizz party rizz just biggest bird pibby glitch rizz king rizzard of oz dj khaled whopper whopper whopper biggest bird zoomer omega male
+
+[Watch a demo](https://youtube.com/shorts/-82lzUF4_3k?feature=share)
 ---
 
 ## Features
