@@ -30,8 +30,9 @@ class SlideShowBuilder:
     self.duration += clip.duration
     return self
 
-  async def generate_slide_show(self, filename: str):
+  async def generate_slide_show(self, filename: str, resolution = (500, 500)):
     final_clip = moviepy.concatenate_videoclips(self.clips, method="compose")
+    final_clip = final_clip.resized(resolution)
     final_clip.write_videofile(TEMP_PATH + f'/{filename}.mp4', fps=24)
 
     return TEMP_PATH + f'/{filename}.mp4'

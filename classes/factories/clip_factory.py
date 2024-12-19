@@ -20,7 +20,7 @@ class ClipFactory:
       builder.add_filler(
         Memer.get_random(c),
         type=('video' if c == 'videos' else 'image'),
-        position=(randint(0, int(vide.w)), randint(0, int(vide.h))),
+        position=(randint(0, vide.w - int(vide.w // 10)), randint(0, vide.h - int(vide.h // 10))),
         size=(randint(100, vide.w // 2), randint(100, vide.h // 2)),
         duration=randint(1, int(vide.duration)),
         start=randint(0, vide.duration // 2)

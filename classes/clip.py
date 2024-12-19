@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from constants import CLIP_TYPE
+from constants import CLIP_TYPE, DEFAULT_CLIP_SIZE
 from moviepy.Effect import Effect
 
 @dataclass
@@ -21,3 +21,4 @@ class Clip:
   fillers: list[PositionedClipObject] = field(default=None)  # Random images/videos
   audio: ClipObject = field(default=None)
   duration: int = field(default=None)
+  size: tuple[int, int] = field(default=DEFAULT_CLIP_SIZE)

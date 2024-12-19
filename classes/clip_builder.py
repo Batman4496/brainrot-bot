@@ -17,6 +17,10 @@ class ClipBuilder:
       duration=DEFAULT_CLIP_DURATION
     )
 
+  def setResolution(self, width: int, height: int):
+    self.clip.size = (width, height)
+    return self
+
   def set_background(self, data: str, type: CLIP_TYPE, effects = [], duration = DEFAULT_CLIP_DURATION):
     background = ClipObject(
       type=type,
@@ -72,6 +76,7 @@ class ClipBuilder:
       duration = DEFAULT_CLIP_DURATION
       self.clip.duration = duration
 
+    main_video = main_video.resized(self.clip.size)
     main_video = main_video.with_duration(duration)
 
     return main_video
